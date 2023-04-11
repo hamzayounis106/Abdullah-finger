@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buuton</title>
+</head>
+<style>
+    body {
+        background-color: antiquewhite;
+        justify-content: center;
+    }
+
+    .container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 1074px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #img {
+        height: 22rem;
+        width: 27rem;
+        opacity: 0;
+        transition: all 0.5s;
+        border: none;
+        border-radius: 3rem;
+    }
+
+    #mybtn {
+        padding: 2rem 2rem;
+        margin-top: 3rem;
+        letter-spacing: 0.3rem;
+        background-color: greenyellow;
+        color: black;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        border: 2px solid brown;
+        border-radius: 18px;
+    }
+
+    #mybtn:hover {
+        background-color: rgb(104, 110, 94);
+        color: black;
+        transition: all 1s;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1644442837865-7a8b7495acd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt="" id="img">
+        <button id="mybtn">Abdullah For you</button>
+    </div>
+</body>
+<script>
+
+   
+    document.getElementById("mybtn").onmouseleave = function () {
+        document.getElementById("img").style.opacity = "0";
+    }
+
+
+    document.getElementById("mybtn").onmouseover = function () {
+        document.getElementById("img").style.opacity = "1";
+    }
+//
+</script>
+
+</html>
